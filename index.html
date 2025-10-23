@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
   <head>
     <title>Exercise 7: Banh Mi, menus, and layout</title>
     <!-- This is embed code for Google fonts, take a look at  https://fonts.google.com/ for more info, you can just pick fonts and get an embed code which you use here. See how I am controlling them from <style> most of the CSS is just pasted in from Google and I have made tweaks to the weights and added other bits. This is what we will learn next week.-->
@@ -15,6 +15,7 @@
         font-variation-settings: "wdth" 100;
         font-size: 16px;
         width: 960px;
+        margin: 0 auto;
       }
 
       h1 {
@@ -24,13 +25,30 @@
         font-style: normal;
       }
 
-      #site-title {}
+      #site-title {
+        font-size: 60px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        margin: 0;
+      }
+      
+      #hero-heading {
+      text-align: center;
+      padding: 5px 100px 5px 100px;
+      }
 
       #nav {
+        position: sticky;
+        top: 0;
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
+        text-align: center;
+        background-color: black;
+        padding: 30px
       }
 
       #nav ul {
@@ -46,14 +64,17 @@
 
       #nav a {
         text-decoration: none;
+        color: white;
       }
 
       #nav a:hover {
         color: red;
+        font-weight: bold;
       }
 
       img {
         width: 100%;
+        height: 250px;
       }
 
       .container {
@@ -66,7 +87,7 @@
       }
 
       .grid-item {
-        background-color: grey;
+        background-color: darkgrey;
         margin: 10px;
         text-align: center;
         padding-bottom: 20px;
@@ -76,9 +97,15 @@
       padding-inline: 40px;
       }
 
-      footer {}
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 30px;
+      }
     </style>
   </head>
+  
   <body>
 
     <h1 id="site-title">Greg’s Banh Mi</h1>
@@ -91,24 +118,25 @@
         <li><a href="/">CONTACT</a></li>
       </ul>
     </div>
-
+  <div id="hero-heading">
     <h1>At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.</h1>
+    </div>
 
     <div class="container">
       <div class="grid-item">
-        <img src="banh-mi.jpg" alt="close up of banh-mi">
+        <img src="pork banh mi.jpeg" alt="close up of banh-mi">
         <h2>Classic Pork Banh Mi</h2>
         <p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
       </div>
 
       <div class="grid-item">
-        <img src="banh-mi.jpg" alt="close up of banh-mi">
+        <img src="lemongrass chicken banh mi.jpg" alt="close up of banh-mi">
         <h2>Lemongrass Chicken Banh Mi</h2>
         <p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
       </div>
 
       <div class="grid-item">
-        <img src="banh-mi.jpg" alt="close up of banh-mi">
+        <img src="tofu banh mi.jpg" alt="close up of banh-mi">
         <h2>Tofu Banh Mi</h2>
         <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
       </div>
